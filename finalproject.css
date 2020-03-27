@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Satisfy', ;
+}
+
+.container {
+    height: 100vh;
+    background-image: url('images/calculator1.gif');
+    background-size: cover;
+    /* background-position-y: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    z-index: -1;
+}
+
+.title {
+    margin-top: 12vh;
+    font-size: 3em;
+}
+
+.test-area {
+    width: 70vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: auto;
+    text-align: left;
+    color: white;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .test-area {
+        width: 80vw;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b5e3f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b7a9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006888;
+}
+
+/* BACKGROUND*/
+
+.container {
+    height: 100vh;
+    background-image: url('images/weeklyplan.gif');
+    background-size: cover;
+    /* background-position-y: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: -1;
+}
+
+.title {
+    margin-top: 12vh;
+    font-size: 3em;
+}
+
+/* JAVASCRIPT TEST AREA */
+
+.test-area {
+    width: 70vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: auto;
+    text-align: left;
+    color: black;
+    overflow: auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "mon tues wed thu fri holiday"
+    "M T W TH F SS"
+    "Madd Tadd Wadd THadd Fadd Sadd"
+    "showM showT showW showTH showF showS"
+      ;
+  }
+  .grid-container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "showM showT showW showTH showF showS"
+      ;
+  }
+
+  .Mon{
+    grid-area: mon;
+  }
+
+  .Tues{
+    grid-area: tues;
+  }
+
+  .Wed{
+    grid-area: wed;
+  }
+
+  .Thu{
+    grid-area: thu;
+  }
+
+  .Fri{
+    grid-area: fri;
+  }
+
+  .Holiday{
+    grid-area: holiday;
+  }
+
+  .Monday{
+    grid-area: M;
+    height: 20px;
+    width:  100%;
+    font-size: 20px;
+  }
+
+  .Tuesday{
+    grid-area: T;
+    height: 20px;
+    width:  100%;
+    font-size: 20px;
+  }
+
+  .Wednesday{
+    grid-area: W;
+    height: 20px;
+    width:  100%;
+    font-size: 20px;
+  }
+
+  .Thursday{
+    grid-area: TH;
+    height: 20px;
+    width:  100%;
+    font-size: 20px;
+  }
+
+  .Friday{
+    grid-area: F;
+    height: 20px;
+    width:  100%;
+    font-size: 20px;
+  }
+
+  .SatSun{
+    grid-area: SS;
+    height: 20px;
+    width:  100%;
+    font-size: 20px;
+  }
+
+  .Maddbtn{
+    grid-area: Madd;
+    background-color: pink;
+  }
+
+  .Taddbtn {
+    grid-area: Tadd;
+    background-color: pink;
+
+  }
+
+  .Waddbtn{
+    grid-area: Wadd;
+    background-color: pink;
+
+  }
+
+  .THaddbtn{
+    grid-area: THadd;
+    background-color: pink;
+
+  }
+
+  .Faddbtn{
+    grid-area: Fadd;
+    background-color: pink;
+
+  }
+
+  .Saddbtn{
+    grid-area: Sadd;
+    background-color: pink;
+
+  }
+
+  .showlist1{
+    grid-area: showM;
+
+  }
+
+  .showlist2{
+    grid-area: showT;
+  }
+
+  .showlist3{
+    grid-area: showW;
+  }
+
+  .showlist4{
+    grid-area: showTH;
+  }
+
+  .showlist5{
+    grid-area: showF;
+  }
+
+  .showlist6{
+    grid-area: showS;
+  }
+
+  
